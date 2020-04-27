@@ -36,14 +36,14 @@ Para establecer la conexión de forma exitosa es necesario crear unas variables 
 * En la ventana que sale se escoge la opción variables de entorno:
 
 <div align='center'>
-    <img  src='./resources/variables.png'>
+    <img  src='./resources/variables.PNG'>
     <p>Se escoge la opción variables de entorno</p>
 </div>
 
 * Se selecciona la variable del sistema **path** y se escoge la opción editar:
 
 <div align='center'>
-    <img  src='./resources/path.png'>
+    <img  src='./resources/path.PNG'>
     <p>Se selecciona la variable path y se edita</p>
 </div>
 
