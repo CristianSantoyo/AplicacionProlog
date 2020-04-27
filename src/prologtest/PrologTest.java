@@ -17,7 +17,7 @@ public class PrologTest {
         System.out.println("Programa básico para determinar que estudiantes pasan cierta asignatura");
 
         
-        System.out.print("Digite el número de creditos de la asignatura: ");
+        System.out.print("Digite el número de créditos de la asignatura: ");
         int numCreditos = tomarEntero(reader);
         
         System.out.print("Digite el número de estudiantes a calificar: ");
@@ -73,7 +73,7 @@ public class PrologTest {
                 System.out.println("El estudiante " + Integer.toString(i + 1) + " ha Aprobado la asignatura con: " + notaTotal);
             } else {
                 if (Float.parseFloat(notaTotal) > 3){
-                    System.out.println("El estudiante ha Reprobado la asignatura por fallas");
+                    System.out.println("El estudiante " + Integer.toString(i + 1) + "ha Reprobado la asignatura por fallas");
                 } else {
                     System.out.println("El estudiante " + Integer.toString(i + 1) + " ha Reprobado la asignatura con: " + notaTotal);
                 }                

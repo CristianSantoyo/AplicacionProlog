@@ -22,28 +22,28 @@ Se implementa un sistema de reglas y un motor de conocimiento mediante un archiv
 Para establecer la conexión de forma exitosa es necesario crear unas variables de entorno (En Windows).
 * Para esto damos click derecho a **Este Equipo** y escogemos la opción **propiedades**:
 <div align='center'>
-    <img  src='../resources/propiedades.png'>
+    <img  src='./resources/propiedades.png'>
     <p>Selección de propiedades del equipo</p>
 </div>
 
 * Una vez se despliega la pantalla se escoge la opción configuración avanzada del sistema:
 
 <div align='center'>
-    <img  src='../resources/configuraciones.png'>
+    <img  src='./resources/configuraciones.png'>
     <p>Se escoge la opción Configuraciones</p>
 </div>
 
 * En la ventana que sale se escoge la opción variables de entorno:
 
 <div align='center'>
-    <img  src='../resources/variables.png'>
+    <img  src='./resources/variables.png'>
     <p>Se escoge la opción variables de entorno</p>
 </div>
 
 * Se selecciona la variable del sistema **path** y se escoge la opción editar:
 
 <div align='center'>
-    <img  src='../resources/path.png'>
+    <img  src='./resources/path.png'>
     <p>Se selecciona la variable path y se edita</p>
 </div>
 
@@ -57,21 +57,21 @@ Para establecer la conexión de forma exitosa es necesario crear unas variables 
 ***Nota:** El jdk que se inserta es el que se tenga instalado en la maquina en este caso es el jdk1.8.0_171*.
 
 <div align='center'>
-    <img  src='../resources/rutas.jpg'>
+    <img  src='./resources/rutas.jpg'>
     <p>Rutas añadidas a la variable path</p>
 </div>
 
 Ahora una vez dentro del proyecto se debe ingresar el jar **jpl.jar** en la parte de librerías: 
 
 <div align='center'>
-    <img  src='../resources/lib.png'>
+    <img  src='./resources/lib.png'>
     <p>se da click derecho a libraries y se escoge add JAR/Folder</p>
 </div>
 
 Se selecciona el archivo **jpl.jar** que se encuentra en **C:\Program Files\swipl\lib\jpl.jar**:
 
 <div align='center'>
-    <img  src='../resources/jpl.png'>
+    <img  src='./resources/jpl.png'>
     <p>selección de archivo jar</p>
 </div>
 
@@ -82,6 +82,6 @@ Con esto el programa puede ejecutarse correctamente.
 A continuación se ve una demostración de la aplicación:
 
 <div align='center'>
-    <img  src='../resources/demostracion.jpg'>
+    <img  src='./resources/demostracion.jpg'>
     <p>Resultado de aplicación corriendo</p>
 </div>
