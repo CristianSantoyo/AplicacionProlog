@@ -21,10 +21,13 @@ public class PrologTest {
         Scanner reader = new Scanner(System.in);
         System.out.println("Programa básico para determinar que estudiantes pasan cierta asignatura");
 
+        
+        System.out.print("Digite el número de creditos de la asignatura: ");
+        int numCreditos = tomarEntero(reader);
+        
         System.out.print("Digite el número de estudiantes a calificar: ");
-
         int numEstudiantes = tomarEntero(reader);
-        System.out.println(numEstudiantes);
+       
 
         DatosEstudiante[] notas = new DatosEstudiante[numEstudiantes];
 
@@ -55,6 +58,7 @@ public class PrologTest {
             // Consulta para determinar si el estudiante aprobó o no la asignatura
 
             String consulta = "aprobado("
+                    + numCreditos + ","
                     + notas[i].getFallas()+ ","
                     + notas[i].getNota1() + ","
                     + notas[i].getNota2() + ","
@@ -63,7 +67,7 @@ public class PrologTest {
             Query ejecutar = new Query(consulta);
 
             // Consulta para conocer la nota total del estudiante
-            String consultaAux = "sumAcumulado("
+            String consultaAux = "sumAcumulado("                    
                     + notas[i].getNota1() + ","
                     + notas[i].getNota2() + ","
                     + notas[i].getNota3()

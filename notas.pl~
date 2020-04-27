@@ -2,18 +2,20 @@ porcentajeNota1(0.35).
 porcentajeNota2(0.35).
 porcentajeNota3(0.30).
 porcentajeFallasPermitido(0.20).
-numerodeClases(50).
+numClasesporCredito(16).
 
 acumulado1(A,B):- porcentajeNota1(X), B is X*A.
 acumulado2(A,B):- porcentajeNota2(X), B is X*A.
 acumulado3(A,B):- porcentajeNota3(X), B is X*A.
 
-porcentajeFallas(A,B):- numerodeClases(X), B is A/X.
+numTotalClases(A,B):- numClasesporCredito(X), B is X*A.
 
-asistencia(A):-
-    porcentajeFallas(A,P),
-    porcentajeFallasPermitido(F),
-    P =< F.
+porcentajeFallas(N,A,B):- numTotalClases(N,X), B is A/X.
+
+asistencia(N,F):-
+    porcentajeFallas(N,F,P),
+    porcentajeFallasPermitido(X),
+    P =< X.
 
 sumAcumulado(A,B,C,S):-
     acumulado1(A,X),
@@ -21,5 +23,8 @@ sumAcumulado(A,B,C,S):-
     acumulado3(C,Z),
     S is X+Y+Z.
 
-aprobado(F,A,B,C):- sumAcumulado(A,B,C,S), S > 2.9.
+aprobado(N,F,A,B,C):-
+    sumAcumulado(A,B,C,S),
+    asistencia(N,F),
+    S > 2.9.
 
