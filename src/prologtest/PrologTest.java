@@ -10,7 +10,7 @@ import org.jpl7.Query;
 
 /**
  *
- * @author Sammy Guergachi <sguergachi at gmail.com>
+ * @author Cristian Santoyo <sant.da97a@gmail.com>
  */
 public class PrologTest {
 
@@ -56,7 +56,6 @@ public class PrologTest {
 
         for (int i = 0; i < numEstudiantes; i++) {
             // Consulta para determinar si el estudiante aprobó o no la asignatura
-
             String consulta = "aprobado("
                     + numCreditos + ","
                     + notas[i].getFallas()+ ","
@@ -79,7 +78,7 @@ public class PrologTest {
                 System.out.println("El estudiante " + Integer.toString(i + 1) + " ha Aprobado la asignatura con: " + notaTotal);
             } else {
                 if (Float.parseFloat(notaTotal) > 3){
-                    System.out.println("El estudiante ha Reprobado la asignatura con por fallas");
+                    System.out.println("El estudiante ha Reprobado la asignatura por fallas");
                 } else {
                     System.out.println("El estudiante " + Integer.toString(i + 1) + " ha Reprobado la asignatura con: " + notaTotal);
                 }                
